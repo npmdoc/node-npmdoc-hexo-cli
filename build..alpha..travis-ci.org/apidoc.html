@@ -1,0 +1,755 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://hexo.io/"
+
+    >hexo-cli (v1.0.2)</a>
+</h1>
+<h4>Command line interface for Hexo</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.hexo-cli">module hexo-cli</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hexo-cli.hexo-cli">
+            function <span class="apidocSignatureSpan"></span>hexo-cli
+            <span class="apidocSignatureSpan">(cwd, args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hexo-cli.context">
+            function <span class="apidocSignatureSpan">hexo-cli.</span>context
+            <span class="apidocSignatureSpan">(base, args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">hexo-cli.</span>console</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">hexo-cli.</span>console.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">hexo-cli.</span>context.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">hexo-cli.</span>version</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.hexo-cli.console">module hexo-cli.console</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hexo-cli.console.help">
+            function <span class="apidocSignatureSpan">hexo-cli.console.</span>help
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hexo-cli.console.init">
+            function <span class="apidocSignatureSpan">hexo-cli.console.</span>init
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hexo-cli.console.version">
+            function <span class="apidocSignatureSpan">hexo-cli.console.</span>version
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.hexo-cli.console.prototype">module hexo-cli.console.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hexo-cli.console.prototype.get">
+            function <span class="apidocSignatureSpan">hexo-cli.console.prototype.</span>get
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hexo-cli.console.prototype.list">
+            function <span class="apidocSignatureSpan">hexo-cli.console.prototype.</span>list
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hexo-cli.console.prototype.register">
+            function <span class="apidocSignatureSpan">hexo-cli.console.prototype.</span>register
+            <span class="apidocSignatureSpan">(name, desc, options, fn)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.hexo-cli.context">module hexo-cli.context</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hexo-cli.context.context">
+            function <span class="apidocSignatureSpan">hexo-cli.</span>context
+            <span class="apidocSignatureSpan">(base, args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hexo-cli.context.super_">
+            function <span class="apidocSignatureSpan">hexo-cli.context.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.hexo-cli.context.prototype">module hexo-cli.context.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hexo-cli.context.prototype.call">
+            function <span class="apidocSignatureSpan">hexo-cli.context.prototype.</span>call
+            <span class="apidocSignatureSpan">(name, args, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hexo-cli.context.prototype.exit">
+            function <span class="apidocSignatureSpan">hexo-cli.context.prototype.</span>exit
+            <span class="apidocSignatureSpan">(err)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hexo-cli.context.prototype.init">
+            function <span class="apidocSignatureSpan">hexo-cli.context.prototype.</span>init
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hexo-cli.context.prototype.unwatch">
+            function <span class="apidocSignatureSpan">hexo-cli.context.prototype.</span>unwatch
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.hexo-cli" id="apidoc.module.hexo-cli">module hexo-cli</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.hexo-cli.hexo-cli" id="apidoc.element.hexo-cli.hexo-cli">
+        function <span class="apidocSignatureSpan"></span>hexo-cli
+        <span class="apidocSignatureSpan">(cwd, args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function entry(cwd, args) {
+  cwd = cwd || process.cwd();
+  args = camelCaseKeys(args || minimist(process.argv.slice(2)));
+
+  var hexo = new Context(cwd, args);
+  var log = hexo.log;
+
+  // Change the title in console
+  process.title = &#x27;hexo&#x27;;
+
+  function handleError(err) {
+    log.fatal(err);
+    process.exit(2);
+  }
+
+  return findPkg(cwd, args).then(function(path) {
+    if (!path) return;
+
+    hexo.base_dir = path;
+
+    return loadModule(path, args).catch(function() {
+      log.error(&#x27;Local hexo not found in %s&#x27;, chalk.magenta(tildify(path)));
+      log.error(&#x27;Try running: \&#x27;npm install hexo --save\&#x27;&#x27;);
+      process.exit(2);
+    });
+  }).then(function(mod) {
+    if (mod) hexo = mod;
+    log = hexo.log;
+
+    require(&#x27;./console&#x27;)(hexo);
+
+    return hexo.init();
+  }).then(function() {
+    var cmd = &#x27;&#x27;;
+
+    if (!args.h &#x26;&#x26; !args.help) {
+      cmd = args._.shift();
+
+      if (cmd) {
+        var c = hexo.extend.console.get(cmd);
+        if (!c) cmd = &#x27;help&#x27;;
+      } else {
+        cmd = &#x27;help&#x27;;
+      }
+    } else {
+      cmd = &#x27;help&#x27;;
+    }
+
+    watchSignal(hexo);
+
+    return hexo.call(cmd, args).then(function() {
+      return hexo.exit();
+    }).catch(function(err) {
+      return hexo.exit(err).then(function() {
+        handleError(err);
+      });
+    });
+  }).catch(handleError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hexo-cli.context" id="apidoc.element.hexo-cli.context">
+        function <span class="apidocSignatureSpan">hexo-cli.</span>context
+        <span class="apidocSignatureSpan">(base, args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Context(base, args) {
+  base = base || process.cwd();
+  args = args || {};
+
+  EventEmitter.call(this);
+
+  this.base_dir = base;
+  this.log = logger(args);
+
+  this.extend = {
+    console: new ConsoleExtend()
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.hexo-cli.console" id="apidoc.module.hexo-cli.console">module hexo-cli.console</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.hexo-cli.console.help" id="apidoc.element.hexo-cli.console.help">
+        function <span class="apidocSignatureSpan">hexo-cli.console.</span>help
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function helpConsole(args) {
+  if (args.v || args.version) {
+    return this.call(&#x27;version&#x27;);
+  } else if (args.consoleList) {
+    return printConsoleList(this.extend.console.list());
+  } else if (typeof args.completion === &#x27;string&#x27;) {
+    return printCompletion(args.completion);
+  }
+
+  var command = args._[0];
+
+  if (typeof command === &#x27;string&#x27; &#x26;&#x26; command !== &#x27;help&#x27;) {
+    var c = this.extend.console.get(command);
+    if (c) return printHelpForCommand(this.extend.console.alias[command], c);
+  }
+
+  return printAllHelp(this.extend.console.list());
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hexo-cli.console.init" id="apidoc.element.hexo-cli.console.init">
+        function <span class="apidocSignatureSpan">hexo-cli.console.</span>init
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function initConsole(args) {
+  args = assign({
+    install: true,
+    clone: true
+  }, args);
+
+  var baseDir = this.base_dir;
+  var target = args._[0] ? pathFn.resolve(baseDir, args._[0]) : baseDir;
+  var log = this.log;
+  var promise;
+
+  log.info(&#x27;Cloning hexo-starter to&#x27;, chalk.magenta(tildify(target)));
+
+  if (args.clone) {
+    promise = spawn(&#x27;git&#x27;, [&#x27;clone&#x27;, &#x27;--recursive&#x27;, GIT_REPO_URL, target], {
+      stdio: &#x27;inherit&#x27;
+    });
+  } else {
+    promise = copyAsset(target);
+  }
+
+  return promise.catch(function() {
+    log.warn(&#x27;git clone failed. Copying data instead&#x27;);
+
+    return copyAsset(target);
+  }).then(function() {
+    return Promise.all([
+      removeGitDir(target),
+      removeGitModules(target)
+    ]);
+  }).then(function() {
+    if (!args.install) return;
+
+    log.info(&#x27;Install dependencies&#x27;);
+
+    return spawn(&#x27;npm&#x27;, [&#x27;install&#x27;, &#x27;--production&#x27;], {
+      cwd: target,
+      stdio: &#x27;inherit&#x27;
+    });
+  }).then(function() {
+    log.info(&#x27;Start blogging with Hexo!&#x27;);
+  }).catch(function() {
+    log.warn(&#x27;Failed to install dependencies. Please run \&#x27;npm install\&#x27; manually!&#x27;);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hexo-cli.console.version" id="apidoc.element.hexo-cli.console.version">
+        function <span class="apidocSignatureSpan">hexo-cli.console.</span>version
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function versionConsole(args) {
+  var versions = process.versions;
+  var keys = Object.keys(versions);
+  var key = &#x27;&#x27;;
+
+  if (this.version) {
+    console.log(&#x27;hexo:&#x27;, this.version);
+  }
+
+  console.log(&#x27;hexo-cli:&#x27;, pkg.version);
+  console.log(&#x27;os:&#x27;, os.type(), os.release(), os.platform(), os.arch());
+
+  for (var i = 0, len = keys.length; i &#x3c; len; i++) {
+    key = keys[i];
+    console.log(&#x27;%s: %s&#x27;, key, versions[key]);
+  }
+
+  return Promise.resolve();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.hexo-cli.console.prototype" id="apidoc.module.hexo-cli.console.prototype">module hexo-cli.console.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.hexo-cli.console.prototype.get" id="apidoc.element.hexo-cli.console.prototype.get">
+        function <span class="apidocSignatureSpan">hexo-cli.console.prototype.</span>get
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (name) {
+  name = name.toLowerCase();
+  return this.store[this.alias[name]];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  callback = args;
+  args = {};
+}
+
+var self = this;
+
+return new Promise(function(resolve, reject) {
+  var c = self.extend.console.<span class="apidocCodeKeywordSpan">get</span>(name);
+
+  if (c) {
+    c.call(self, args).then(resolve, reject);
+  } else {
+    reject(new Error(&#x27;Console `&#x27; + name + &#x27;` has not been registered yet!&#x27;));
+  }
+}).asCallback(callback);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hexo-cli.console.prototype.list" id="apidoc.element.hexo-cli.console.prototype.list">
+        function <span class="apidocSignatureSpan">hexo-cli.console.prototype.</span>list
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">list = function () {
+  return this.store;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var COMPLETION_DIR = pathFn.join(__dirname, &#x27;../../completion&#x27;);
+
+function helpConsole(args) {
+if (args.v || args.version) {
+  return this.call(&#x27;version&#x27;);
+} else if (args.consoleList) {
+  return printConsoleList(this.extend.console.<span class="apidocCodeKeywordSpan">list</span>());
+} else if (typeof args.completion === &#x27;string&#x27;) {
+  return printCompletion(args.completion);
+}
+
+var command = args._[0];
+
+if (typeof command === &#x27;string&#x27; &#x26;&#x26; command !== &#x27;help&#x27;) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hexo-cli.console.prototype.register" id="apidoc.element.hexo-cli.console.prototype.register">
+        function <span class="apidocSignatureSpan">hexo-cli.console.prototype.</span>register
+        <span class="apidocSignatureSpan">(name, desc, options, fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">register = function (name, desc, options, fn) {
+  if (!name) throw new TypeError(&#x27;name is required&#x27;);
+
+  if (!fn) {
+    if (options) {
+      if (typeof options === &#x27;function&#x27;) {
+        fn = options;
+
+        if (typeof desc === &#x27;object&#x27;) { // name, options, fn
+          options = desc;
+          desc = &#x27;&#x27;;
+        } else { // name, desc, fn
+          options = {};
+        }
+      } else {
+        throw new TypeError(&#x27;fn must be a function&#x27;);
+      }
+    } else {
+      // name, fn
+      if (typeof desc === &#x27;function&#x27;) {
+        fn = desc;
+        options = {};
+        desc = &#x27;&#x27;;
+      } else {
+        throw new TypeError(&#x27;fn must be a function&#x27;);
+      }
+    }
+  }
+
+  if (fn.length &#x3e; 1) {
+    fn = Promise.promisify(fn);
+  } else {
+    fn = Promise.method(fn);
+  }
+
+  var c = this.store[name.toLowerCase()] = fn;
+  c.options = options;
+  c.desc = desc;
+
+  this.alias = abbrev(Object.keys(this.store));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+&#x27;use strict&#x27;;
+
+module.exports = function(ctx) {
+var console = ctx.extend.console;
+
+console.<span class="apidocCodeKeywordSpan">register</span>(&#x27;help&#x27;, &#x27;Get help on a command.&#x27;, {
+}, require(&#x27;./help&#x27;));
+
+console.register(&#x27;init&#x27;, &#x27;Create a new Hexo folder.&#x27;, {
+  desc: &#x27;Create a new Hexo folder at the specified path or the current directory.&#x27;,
+  usage: &#x27;[destination]&#x27;,
+  arguments: [
+    {name: &#x27;destination&#x27;, desc: &#x27;Folder path. Initialize in current folder if not specified&#x27;}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.hexo-cli.context" id="apidoc.module.hexo-cli.context">module hexo-cli.context</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.hexo-cli.context.context" id="apidoc.element.hexo-cli.context.context">
+        function <span class="apidocSignatureSpan">hexo-cli.</span>context
+        <span class="apidocSignatureSpan">(base, args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Context(base, args) {
+  base = base || process.cwd();
+  args = args || {};
+
+  EventEmitter.call(this);
+
+  this.base_dir = base;
+  this.log = logger(args);
+
+  this.extend = {
+    console: new ConsoleExtend()
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hexo-cli.context.super_" id="apidoc.element.hexo-cli.context.super_">
+        function <span class="apidocSignatureSpan">hexo-cli.context.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.hexo-cli.context.prototype" id="apidoc.module.hexo-cli.context.prototype">module hexo-cli.context.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.hexo-cli.context.prototype.call" id="apidoc.element.hexo-cli.context.prototype.call">
+        function <span class="apidocSignatureSpan">hexo-cli.context.prototype.</span>call
+        <span class="apidocSignatureSpan">(name, args, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">call = function (name, args, callback) {
+  if (!callback &#x26;&#x26; typeof args === &#x27;function&#x27;) {
+    callback = args;
+    args = {};
+  }
+
+  var self = this;
+
+  return new Promise(function(resolve, reject) {
+    var c = self.extend.console.get(name);
+
+    if (c) {
+      c.call(self, args).then(resolve, reject);
+    } else {
+      reject(new Error(&#x27;Console `&#x27; + name + &#x27;` has not been registered yet!&#x27;));
+    }
+  }).asCallback(callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var Promise = require(&#x27;bluebird&#x27;);
+var ConsoleExtend = require(&#x27;./extend/console&#x27;);
+
+function Context(base, args) {
+base = base || process.cwd();
+args = args || {};
+
+EventEmitter.<span class="apidocCodeKeywordSpan">call</span>(this);
+
+this.base_dir = base;
+this.log = logger(args);
+
+this.extend = {
+  console: new ConsoleExtend()
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hexo-cli.context.prototype.exit" id="apidoc.element.hexo-cli.context.prototype.exit">
+        function <span class="apidocSignatureSpan">hexo-cli.context.prototype.</span>exit
+        <span class="apidocSignatureSpan">(err)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">exit = function (err) {
+  if (err) {
+    this.log.fatal(
+      {err: err},
+      &#x27;Something\&#x27;s wrong. Maybe you can find the solution here: %s&#x27;,
+      chalk.underline(&#x27;http://hexo.io/docs/troubleshooting.html&#x27;)
+    );
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hexo-cli.context.prototype.init" id="apidoc.element.hexo-cli.context.prototype.init">
+        function <span class="apidocSignatureSpan">hexo-cli.context.prototype.</span>init
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">init = function () {
+  // Do nothing
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hexo-cli.context.prototype.unwatch" id="apidoc.element.hexo-cli.context.prototype.unwatch">
+        function <span class="apidocSignatureSpan">hexo-cli.context.prototype.</span>unwatch
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unwatch = function () {
+  // Do nothing
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
